@@ -80,14 +80,8 @@
   top: 20px;
 
 }
-@media(max-width: 340px){
-  .home .max-width{
-    margin-right: 12px;
-    padding: 0px 10px;
-  }
-}
 
-@media (max-width : 982px) {
+@media (max-width : 868px) {
   .home .max-width{
     margin-left: 0px;
     padding: 0px 10px;
@@ -132,7 +126,7 @@
   }
   .about .about-content .left img{
     position: absolute;
-    left: 25%;
+    left: 0;
     top: 130%;
   }
 
@@ -249,7 +243,7 @@ section{
 }
 
 .about .about-content .left{
-  width: 45%;
+  width: 40%;
 }
 
 .about .about-content .left img{
@@ -260,7 +254,7 @@ section{
 }
 
 .about .about-content .right{
-  width: 55%;
+  width: 60%;
 }
 
 .about .about-content .right .text{
@@ -292,4 +286,12 @@ section{
 .about .about-content .right a:hover{
   color: crimson;
   background: none;
+}
+
+@media(max-width: 412px){
+ .about .about-content .right{
+   width: 90%;
+   position: absolute;
+   left: 5%;
+ }
 }
