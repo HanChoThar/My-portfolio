@@ -124,11 +124,6 @@
   .about .about-content .column{
     width: 50%;
   }
-  .about .about-content .left img{
-    position: absolute;
-    left: 0;
-    top: 130%;
-  }
 
   .about .about-content .right{
     font-size: 20px;
@@ -213,28 +208,7 @@ section{
   font-family: 'Ubuntu', sans-serif;
 }
 
-.about .title::before{
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 180px;
-  height: 3px;
-  background: #111;
-  transform: translateX(-50%);
-}
 
-.about .title::after{
-  content: "who I am";
-  font-size: 20px;
-  color: crimson;
-  position: absolute;
-  bottom: -12px;
-  left: 50%;
-  padding: 5px;
-  background: #fff;
-  transform: translateX(-50%);
-}
 .about .about-content{
   display: flex;
   align-items: center;
@@ -243,7 +217,7 @@ section{
 }
 
 .about .about-content .left{
-  width: 40%;
+  width: 45%;
 }
 
 .about .about-content .left img{
@@ -254,7 +228,7 @@ section{
 }
 
 .about .about-content .right{
-  width: 60%;
+  width: 55%;
 }
 
 .about .about-content .right .text{
@@ -288,10 +262,33 @@ section{
   background: none;
 }
 
-@media(max-width: 412px){
+@media(max-width: 474px){
  .about .about-content .right{
    width: 90%;
    position: absolute;
    left: 5%;
+   top: 170%;
  }
+
+ .about .about-content .left img{
+   width: 200px;
+   height: 200px;
+   position: absolute;
+   left: 20%;
+   top: 130%;
+ }
+}
+
+@media(max-width: 1046px){
+  .about .about-content .right{
+    width: 45%;
+  }
+}
+
+@media(max-width: 867px){
+  .about .about-content .right{
+    width: 90%;
+    position: absolute;
+    left: 5%;
+  }
 }
